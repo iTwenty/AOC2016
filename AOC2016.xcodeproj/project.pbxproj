@@ -63,6 +63,9 @@
 		C03395E226E0ADBE0066D5F4 /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = C03395E126E0ADBE0066D5F4 /* RealModule */; };
 		C03395E426E0ADBE0066D5F4 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = C03395E326E0ADBE0066D5F4 /* Numerics */; };
 		C03395E626E0F8FF0066D5F4 /* Input02-test in Resources */ = {isa = PBXBuildFile; fileRef = C03395E526E0F8EA0066D5F4 /* Input02-test */; };
+		C050F08F278F270300505D42 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = C050F08E278F270300505D42 /* Collections */; };
+		C050F091278F270300505D42 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = C050F090278F270300505D42 /* DequeModule */; };
+		C050F093278F270300505D42 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = C050F092278F270300505D42 /* OrderedCollections */; };
 		C071729626E20B8500C87767 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C071729526E20B8500C87767 /* Algorithms */; };
 		C071729826E753BC00C87767 /* Input07-test in Resources */ = {isa = PBXBuildFile; fileRef = C071729726E753BC00C87767 /* Input07-test */; };
 		C071729A26E9081B00C87767 /* Input09-test in Resources */ = {isa = PBXBuildFile; fileRef = C071729926E9081B00C87767 /* Input09-test */; };
@@ -147,8 +150,11 @@
 			files = (
 				C071729626E20B8500C87767 /* Algorithms in Frameworks */,
 				C03395E226E0ADBE0066D5F4 /* RealModule in Frameworks */,
+				C050F08F278F270300505D42 /* Collections in Frameworks */,
 				C03395E426E0ADBE0066D5F4 /* Numerics in Frameworks */,
 				C03395E026E0ADBE0066D5F4 /* ComplexModule in Frameworks */,
+				C050F093278F270300505D42 /* OrderedCollections in Frameworks */,
+				C050F091278F270300505D42 /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,9 @@
 				C03395E126E0ADBE0066D5F4 /* RealModule */,
 				C03395E326E0ADBE0066D5F4 /* Numerics */,
 				C071729526E20B8500C87767 /* Algorithms */,
+				C050F08E278F270300505D42 /* Collections */,
+				C050F090278F270300505D42 /* DequeModule */,
+				C050F092278F270300505D42 /* OrderedCollections */,
 			);
 			productName = AOC2016;
 			productReference = C033954B26E0850E0066D5F4 /* AOC2016 */;
@@ -505,6 +514,7 @@
 			packageReferences = (
 				C03395DE26E0ADBE0066D5F4 /* XCRemoteSwiftPackageReference "swift-numerics" */,
 				C071729426E20B8500C87767 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				C050F08D278F270300505D42 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = C033954C26E0850E0066D5F4 /* Products */;
 			projectDirPath = "";
@@ -795,6 +805,14 @@
 				minimumVersion = 0.0.1;
 			};
 		};
+		C050F08D278F270300505D42 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		C071729426E20B8500C87767 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms/";
@@ -820,6 +838,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C03395DE26E0ADBE0066D5F4 /* XCRemoteSwiftPackageReference "swift-numerics" */;
 			productName = Numerics;
+		};
+		C050F08E278F270300505D42 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C050F08D278F270300505D42 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		C050F090278F270300505D42 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C050F08D278F270300505D42 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		C050F092278F270300505D42 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C050F08D278F270300505D42 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
 		};
 		C071729526E20B8500C87767 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
