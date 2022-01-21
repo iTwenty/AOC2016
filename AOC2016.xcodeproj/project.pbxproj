@@ -37,7 +37,6 @@
 		C033959C26E0850E0066D5F4 /* Puzzle14.swift in Sources */ = {isa = PBXBuildFile; fileRef = C033959B26E0850E0066D5F4 /* Puzzle14.swift */; };
 		C03395A126E0850E0066D5F4 /* Puzzle15.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03395A026E0850E0066D5F4 /* Puzzle15.swift */; };
 		C03395A626E0850E0066D5F4 /* Puzzle16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03395A526E0850E0066D5F4 /* Puzzle16.swift */; };
-		C03395A826E0850E0066D5F4 /* Input16 in Resources */ = {isa = PBXBuildFile; fileRef = C03395A726E0850E0066D5F4 /* Input16 */; };
 		C03395AB26E0850E0066D5F4 /* Puzzle17.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03395AA26E0850E0066D5F4 /* Puzzle17.swift */; };
 		C03395AD26E0850E0066D5F4 /* Input17 in Resources */ = {isa = PBXBuildFile; fileRef = C03395AC26E0850E0066D5F4 /* Input17 */; };
 		C03395B026E0850E0066D5F4 /* Puzzle18.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03395AF26E0850E0066D5F4 /* Puzzle18.swift */; };
@@ -112,7 +111,6 @@
 		C033959B26E0850E0066D5F4 /* Puzzle14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle14.swift; sourceTree = "<group>"; };
 		C03395A026E0850E0066D5F4 /* Puzzle15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle15.swift; sourceTree = "<group>"; };
 		C03395A526E0850E0066D5F4 /* Puzzle16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle16.swift; sourceTree = "<group>"; };
-		C03395A726E0850E0066D5F4 /* Input16 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input16; sourceTree = "<group>"; };
 		C03395AA26E0850E0066D5F4 /* Puzzle17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle17.swift; sourceTree = "<group>"; };
 		C03395AC26E0850E0066D5F4 /* Input17 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input17; sourceTree = "<group>"; };
 		C03395AF26E0850E0066D5F4 /* Puzzle18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle18.swift; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 			isa = PBXGroup;
 			children = (
 				C03395A526E0850E0066D5F4 /* Puzzle16.swift */,
-				C03395A726E0850E0066D5F4 /* Input16 */,
 			);
 			path = 16;
 			sourceTree = "<group>";
@@ -545,7 +542,6 @@
 				C03395E626E0F8FF0066D5F4 /* Input02-test in Resources */,
 				C03395C126E0850E0066D5F4 /* Input21 in Resources */,
 				C03395D026E0850E0066D5F4 /* Input24 in Resources */,
-				C03395A826E0850E0066D5F4 /* Input16 in Resources */,
 				C033958026E0850E0066D5F4 /* Input08 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
