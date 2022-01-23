@@ -73,9 +73,7 @@ class Puzzle14: Puzzle {
             return cached
         }
         let str = "\(salt)\(index)"
-        let hash = Insecure.MD5.hash(data: str.data(using: .utf8)!).map {
-            String(format: "%02hhx", $0)
-        }.joined()
+        let hash = str.md5Hex()
         md5Cache[index] = hash
         return hash
     }
@@ -86,9 +84,7 @@ class Puzzle14: Puzzle {
         }
         var str = "\(salt)\(index)"
         for _ in 0...2016 {
-            str = Insecure.MD5.hash(data: str.data(using: .utf8)!).map {
-                String(format: "%02hhx", $0)
-            }.joined()
+            str = str.md5Hex()
         }
         md5Cache[index] = str
         return str

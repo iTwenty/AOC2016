@@ -42,15 +42,3 @@ struct Puzzle05: Puzzle {
         // WOOT!
     }
 }
-
-fileprivate extension String {
-    func md5Hex() -> String {
-        return Insecure.MD5.hash(data: self.data(using: .utf8)!).map {
-            String(format: "%02hhx", $0)
-        }.joined()
-    }
-
-    mutating func replace(charAtIndex index: String.Index, with char: String) {
-        self.replaceSubrange(index...index, with: char)
-    }
-}
