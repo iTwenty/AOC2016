@@ -65,6 +65,8 @@
 		C071729A26E9081B00C87767 /* Input09-test in Resources */ = {isa = PBXBuildFile; fileRef = C071729926E9081B00C87767 /* Input09-test */; };
 		C071729C26EC808900C87767 /* Input10-test in Resources */ = {isa = PBXBuildFile; fileRef = C071729B26EC808900C87767 /* Input10-test */; };
 		C08726B7279D5945009A7CB4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08726B6279D5945009A7CB4 /* Extensions.swift */; };
+		C08726BB27A161AC009A7CB4 /* Input20-test in Resources */ = {isa = PBXBuildFile; fileRef = C08726BA27A16154009A7CB4 /* Input20-test */; };
+		C08726BE27A1DCD3009A7CB4 /* SE0270_RangeSet in Frameworks */ = {isa = PBXBuildFile; productRef = C08726BD27A1DCD3009A7CB4 /* SE0270_RangeSet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,7 @@
 		C071729926E9081B00C87767 /* Input09-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input09-test"; sourceTree = "<group>"; };
 		C071729B26EC808900C87767 /* Input10-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input10-test"; sourceTree = "<group>"; };
 		C08726B6279D5945009A7CB4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C08726BA27A16154009A7CB4 /* Input20-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input20-test"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08726BE27A1DCD3009A7CB4 /* SE0270_RangeSet in Frameworks */,
 				C071729626E20B8500C87767 /* Algorithms in Frameworks */,
 				C03395E226E0ADBE0066D5F4 /* RealModule in Frameworks */,
 				C050F08F278F270300505D42 /* Collections in Frameworks */,
@@ -377,6 +381,7 @@
 			children = (
 				C03395B926E0850E0066D5F4 /* Puzzle20.swift */,
 				C03395BB26E0850E0066D5F4 /* Input20 */,
+				C08726BA27A16154009A7CB4 /* Input20-test */,
 			);
 			path = 20;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				C050F08E278F270300505D42 /* Collections */,
 				C050F090278F270300505D42 /* DequeModule */,
 				C050F092278F270300505D42 /* OrderedCollections */,
+				C08726BD27A1DCD3009A7CB4 /* SE0270_RangeSet */,
 			);
 			productName = AOC2016;
 			productReference = C033954B26E0850E0066D5F4 /* AOC2016 */;
@@ -500,6 +506,7 @@
 				C03395DE26E0ADBE0066D5F4 /* XCRemoteSwiftPackageReference "swift-numerics" */,
 				C071729426E20B8500C87767 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				C050F08D278F270300505D42 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				C08726BC27A1DCD3009A7CB4 /* XCRemoteSwiftPackageReference "swift-se0270-range-set" */,
 			);
 			productRefGroup = C033954C26E0850E0066D5F4 /* Products */;
 			projectDirPath = "";
@@ -532,6 +539,7 @@
 				C03395BC26E0850E0066D5F4 /* Input20 in Resources */,
 				C033958526E0850E0066D5F4 /* Input09 in Resources */,
 				C03395C626E0850E0066D5F4 /* Input22 in Resources */,
+				C08726BB27A161AC009A7CB4 /* Input20-test in Resources */,
 				C033958F26E0850E0066D5F4 /* Input11 in Resources */,
 				C033957B26E0850E0066D5F4 /* Input07 in Resources */,
 				C03395E626E0F8FF0066D5F4 /* Input02-test in Resources */,
@@ -801,6 +809,14 @@
 				minimumVersion = 0.2.1;
 			};
 		};
+		C08726BC27A1DCD3009A7CB4 /* XCRemoteSwiftPackageReference "swift-se0270-range-set" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-se0270-range-set";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -838,6 +854,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C071729426E20B8500C87767 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
+		};
+		C08726BD27A1DCD3009A7CB4 /* SE0270_RangeSet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08726BC27A1DCD3009A7CB4 /* XCRemoteSwiftPackageReference "swift-se0270-range-set" */;
+			productName = SE0270_RangeSet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
