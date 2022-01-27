@@ -67,6 +67,7 @@
 		C08726B7279D5945009A7CB4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08726B6279D5945009A7CB4 /* Extensions.swift */; };
 		C08726BB27A161AC009A7CB4 /* Input20-test in Resources */ = {isa = PBXBuildFile; fileRef = C08726BA27A16154009A7CB4 /* Input20-test */; };
 		C08726BE27A1DCD3009A7CB4 /* SE0270_RangeSet in Frameworks */ = {isa = PBXBuildFile; productRef = C08726BD27A1DCD3009A7CB4 /* SE0270_RangeSet */; };
+		C08726C027A2F5B7009A7CB4 /* Input21-test in Resources */ = {isa = PBXBuildFile; fileRef = C08726BF27A2F547009A7CB4 /* Input21-test */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		C071729B26EC808900C87767 /* Input10-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input10-test"; sourceTree = "<group>"; };
 		C08726B6279D5945009A7CB4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C08726BA27A16154009A7CB4 /* Input20-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input20-test"; sourceTree = "<group>"; };
+		C08726BF27A2F547009A7CB4 /* Input21-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input21-test"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,7 @@
 			children = (
 				C03395BE26E0850E0066D5F4 /* Puzzle21.swift */,
 				C03395C026E0850E0066D5F4 /* Input21 */,
+				C08726BF27A2F547009A7CB4 /* Input21-test */,
 			);
 			path = 21;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				C03395CB26E0850E0066D5F4 /* Input23 in Resources */,
 				C03395D526E0850E0066D5F4 /* Input25 in Resources */,
 				C071729A26E9081B00C87767 /* Input09-test in Resources */,
+				C08726C027A2F5B7009A7CB4 /* Input21-test in Resources */,
 				C033958A26E0850E0066D5F4 /* Input10 in Resources */,
 				C071729C26EC808900C87767 /* Input10-test in Resources */,
 				C071729826E753BC00C87767 /* Input07-test in Resources */,
