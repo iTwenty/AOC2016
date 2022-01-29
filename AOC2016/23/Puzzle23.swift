@@ -8,7 +8,7 @@
 struct Puzzle23: Puzzle {
 
     func part1() {
-        
+
     }
 
     func part2() {

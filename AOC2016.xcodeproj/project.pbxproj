@@ -68,6 +68,7 @@
 		C08726BB27A161AC009A7CB4 /* Input20-test in Resources */ = {isa = PBXBuildFile; fileRef = C08726BA27A16154009A7CB4 /* Input20-test */; };
 		C08726BE27A1DCD3009A7CB4 /* SE0270_RangeSet in Frameworks */ = {isa = PBXBuildFile; productRef = C08726BD27A1DCD3009A7CB4 /* SE0270_RangeSet */; };
 		C08726C027A2F5B7009A7CB4 /* Input21-test in Resources */ = {isa = PBXBuildFile; fileRef = C08726BF27A2F547009A7CB4 /* Input21-test */; };
+		C08726C227A53A1D009A7CB4 /* Assembunny.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08726C127A53A1D009A7CB4 /* Assembunny.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		C08726B6279D5945009A7CB4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C08726BA27A16154009A7CB4 /* Input20-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input20-test"; sourceTree = "<group>"; };
 		C08726BF27A2F547009A7CB4 /* Input21-test */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Input21-test"; sourceTree = "<group>"; };
+		C08726C127A53A1D009A7CB4 /* Assembunny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembunny.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				C033955326E0850E0066D5F4 /* Puzzle.swift */,
 				C033955526E0850E0066D5F4 /* main.swift */,
 				C033955726E0850E0066D5F4 /* InputFileReader.swift */,
+				C08726C127A53A1D009A7CB4 /* Assembunny.swift */,
 				C08726B6279D5945009A7CB4 /* Extensions.swift */,
 				C033955926E0850E0066D5F4 /* 01 */,
 				C033955E26E0850E0066D5F4 /* 02 */,
@@ -560,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08726C227A53A1D009A7CB4 /* Assembunny.swift in Sources */,
 				C033958326E0850E0066D5F4 /* Puzzle09.swift in Sources */,
 				C03395C426E0850E0066D5F4 /* Puzzle22.swift in Sources */,
 				C03395B526E0850E0066D5F4 /* Puzzle19.swift in Sources */,
