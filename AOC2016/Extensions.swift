@@ -18,4 +18,8 @@ extension String {
     mutating func replace(charAtIndex index: String.Index, with char: String) {
         self.replaceSubrange(index...index, with: char)
     }
+
+    mutating func replaceFirst(_ count: Int, with str: String) {
+        self.replaceSubrange(self.startIndex..<self.index(self.startIndex, offsetBy: count), with: str)
+    }
 }

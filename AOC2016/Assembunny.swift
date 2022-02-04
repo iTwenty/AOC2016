@@ -8,29 +8,58 @@
 import Foundation
 
 class Assembunny {
-    private let program: [String]
+    private var program: [String]
+    private let debug: Bool
     var pc = 0
     var registers: [Substring: Int] = ["a": 0, "b": 0, "c": 0, "d": 0]
 
-    init(program: [String]) {
+    init(program: [String], debug: Bool = false) {
         self.program = program
+        self.debug = debug
     }
 
     func run() {
         while pc < program.count {
             let line = program[pc]
+            if debug {
+                print("\(pc) \(line)")
+            }
             let split = line.split(separator: " ")
             switch split[0] {
             case "cpy":
-                registers[split[2]] = Int(split[1]) ?? registers[split[1]]
+                if let _ = registers[split[2]] {
+                    registers[split[2]] = Int(split[1]) ?? registers[split[1]]
+                }
             case "inc":
-                registers[split[1]] = registers[split[1]]! + 1
+                if let _ = registers[split[1]] {
+                    registers[split[1]] = registers[split[1]]! + 1
+                }
             case "dec":
-                registers[split[1]] = registers[split[1]]! - 1
+                if let _ = registers[split[1]] {
+                    registers[split[1]] = registers[split[1]]! - 1
+                }
             case "jnz":
                 let value = Int(split[1]) ?? registers[split[1]]!
+                let offset = Int(split[2]) ?? registers[split[2]]!
                 if value != 0 {
-                    pc += (Int(split[2])! - 1)
+                    pc += (offset - 1)
+                }
+            case "tgl":
+                let value = Int(split[1]) ?? registers[split[1]]!
+                let targetIndex = pc+value
+                if targetIndex < program.count {
+                    var target = program[pc+value]
+                    let targetSplit = target.split(separator: " ")
+                    if target.starts(with: "inc") {
+                        target.replaceFirst(3, with: "dec")
+                    } else if targetSplit.count == 2 {
+                        target.replaceFirst(3, with: "inc")
+                    } else if target.starts(with: "jnz") {
+                        target.replaceFirst(3, with: "cpy")
+                    } else {
+                        target.replaceFirst(3, with: "jnz")
+                    }
+                    program[targetIndex] = target
                 }
             default:
                 fatalError("Invalid instruction - \(line)")
