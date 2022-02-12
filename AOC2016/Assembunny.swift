@@ -10,12 +10,14 @@ import Foundation
 class Assembunny {
     private var program: [String]
     private let debug: Bool
+    var clockSignal: String
     var pc = 0
     var registers: [Substring: Int] = ["a": 0, "b": 0, "c": 0, "d": 0]
 
     init(program: [String], debug: Bool = false) {
         self.program = program
         self.debug = debug
+        self.clockSignal = ""
     }
 
     func run() {
@@ -60,6 +62,12 @@ class Assembunny {
                         target.replaceFirst(3, with: "jnz")
                     }
                     program[targetIndex] = target
+                }
+            case "out":
+                let value = Int(split[1]) ?? registers[split[1]]!
+                clockSignal += "\(value)"
+                if clockSignal.count == 100 {
+                    return
                 }
             default:
                 fatalError("Invalid instruction - \(line)")
